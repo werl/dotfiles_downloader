@@ -18,7 +18,7 @@ if [ -d "$DOTFILES" ]; then
 fi
 
 printf "Cloning Dotfiles Downloader\n"
-env git clone --depth=1 https://github.com/werl/REPO.git $DOTFILES || {
+env git clone --depth=1 https://github.com/werl/dotfiles_downloader.git $DOTFILES || {
     printf "Error: git clone of Dotfiles Downloader repo failed\n"
 }
 
