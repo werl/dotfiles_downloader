@@ -3,8 +3,6 @@
 # Install Zsh, git, and vim
 sudo apt-get install zsh vim git
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 set -e
 
 if [ ! -n "$DOTFILES"  ]; then
