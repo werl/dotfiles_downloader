@@ -29,6 +29,7 @@ if [ -f "$VIMRC" ]; then
     printf "Moving old .vimrc to .vimrc.old\n"
     mv ~/.vimrc ~/.vimrc.old
 fi
+ls -s ~/.dotfiles/.vimrc ~/.vimrc
 unset VIMRC
 
 if [ ! -n "$ZSHRC" ]; then
@@ -38,6 +39,7 @@ if [ -f $ZSHRC ]; then
     printf "Moving old .zshrc to .zshrc.old\n"
     mv ~/.zshrc ~/.zshrc.old
 fi
+ls -s ~/.dotfiles/.zshrc ~/.zshrc
 unset ZSHRC
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
