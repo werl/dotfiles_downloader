@@ -27,7 +27,7 @@ if [ ! -n "$VIMRC" ]; then
 fi
 if [ -f "$VIMRC" ]; then
     printf "Moving old .vimrc to .vimrc.old\n"
-    mv ~/.vimrc ~/.vimrc.old
+    cp ~/.vimrc ~/.vimrc.old
 fi
 unset VIMRC
 
@@ -36,7 +36,7 @@ if [ ! -n "$ZSHRC" ]; then
 fi
 if [ -f $ZSHRC ]; then
     printf "Moving old .zshrc to .zshrc.old\n"
-    mv ~/.zshrc ~/.zshrc.old
+    cp ~/.zshrc ~/.zshrc.old
 fi
 unset ZSHRC
 
